@@ -1,0 +1,39 @@
+{
+  "name": "react-simple-date-input",
+  "version": "0.1.0",
+  "description": "simple date input using react",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build": "webpack --mode production --config ./webpack.production.config.js", 
+    "prepublish": "rm -rf ./dist && npm run build"
+  },
+  "keywords": [
+    "react",
+    "date-input",
+    "date-picker"
+  ],
+  "author": "https://github.com/joecrismolina",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  },
+  "devDependencies": {
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "ajv": "^6.8.1",
+    "babel-loader": "^8.0.5",
+    "react-hot-loader": "^4.6.5",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
