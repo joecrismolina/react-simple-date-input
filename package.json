@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build": "webpack --mode production --config ./webpack.production.config.js", 
-    "non-prepublish": "rm -rf ./dist && npm run build"
+    "prepublish": "rm -rf ./dist && npm run build"
   },
   "keywords": [
     "react",
